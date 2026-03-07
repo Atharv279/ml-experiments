@@ -1,0 +1,1 @@
+# stdlib only — simulates LightGBM training without actual dependency
