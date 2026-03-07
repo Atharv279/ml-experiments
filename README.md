@@ -2,7 +2,7 @@
 
 # 🧠 ML Experiments
 
-[![Daily Training](https://github.com/USER/ml-experiments/actions/workflows/daily_run.yml/badge.svg)](https://github.com/USER/ml-experiments/actions/workflows/daily_run.yml)
+[![Daily Training](https://github.com/Atharv279/ml-experiments/actions/workflows/daily_run.yml/badge.svg)](https://github.com/Atharv279/ml-experiments/actions/workflows/daily_run.yml)
 ![Python](https://img.shields.io/badge/Python-3.11+-3776ab?logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Automated](https://img.shields.io/badge/Runs-Daily%20via%20CI-blue)
