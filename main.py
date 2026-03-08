@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 """ML Experiments — LightGBM training simulator with loss curves and visual analytics."""
-import json, os, random, math, datetime, hashlib, glob
+import json
+import os
+import random
+import math
+import datetime
+import hashlib
+import glob
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -189,8 +195,8 @@ def main():
     for r in all_results:
         md.append(f"## {r['experiment']} ({r['metric'].upper()})\n")
         md.append(f"**Best Score:** {r['best_score']} (Trial {r['best_trial']})\n")
-        md.append(f"| Trial | Score | Overfit Gap | Time | LR | Trees | Leaves |")
-        md.append(f"|-------|-------|-------------|------|-----|-------|--------|")
+        md.append("| Trial | Score | Overfit Gap | Time | LR | Trees | Leaves |")
+        md.append("|-------|-------|-------------|------|-----|-------|--------|")
         for t in r["trials"]:
             hp, res = t["hyperparams"], t["results"]
             marker = " ⭐" if t["trial"] == r["best_trial"] else ""
@@ -199,7 +205,7 @@ def main():
 
     with open(f"logs/{date_str}.md", "w") as f:
         f.write("\n".join(md))
-    print(f"[ml-experiments] v2.0 report + charts generated")
+    print("[ml-experiments] v2.0 report + charts generated")
 
 if __name__ == "__main__":
     main()
